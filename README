@@ -1,0 +1,35 @@
+in your view file:
+
+<?php
+/**
+ * User: yiqing
+ * Date: 11-12-3
+ * Time: 下午4:07
+ */
+
+$this->widget(
+    'common.widgets.slider.bjqs.JBasicSlider',
+    array(
+        'selector' =>'#my-slideshow',
+        'options'=>"js:
+        {
+           // 'width' : 940,
+           // 'height' : 340,
+            'showMarkers' : true,
+            'showControls' : true,
+            'centerMarkers' : false
+        }",
+
+    )
+);
+?>
+<div style="width:75%; ">
+    <div id="my-slideshow">
+        <ul class="bjqs">
+            <li><!-- Any content you like --> sajdkfalsdflaksdklf</li>
+            <li><!-- Can go inside these slides-->
+                asdfaskd;lkjadfglsdkfgkjsdkjfgkdkskgj
+            </li>
+        </ul>
+    </div>
+</div>
